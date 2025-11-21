@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./src/css/output.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="./public/favicon.ico" />
+  <title>Full Gallery — Nail Salon</title>
+</head>
+
+<body class="bg-neutral-100">
+
+  <nav class="fixed w-full z-20 top-0 start-0 bg-neutral-100">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <span class="self-center text-xl text-heading font-semibold whitespace-nowrap">LOGO</span>
+      </a>
+      <button id="burger-btn" data-collapse-toggle="navbar-default" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
+        aria-controls="navbar">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+          viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto text-white" id="navbar">
+        <ul
+          class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
+          <li>
+            <a href="#hero"
+              class="block py-2 px-3 text-gray-500 bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#services"
+              class="block py-2 px-3 text-gray-500 bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0">
+              Services
+            </a>
+          </li>
+          <li>
+            <a href="#gallery"
+              class="block py-2 px-3 text-gray-500 bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0">
+              Gallery
+            </a>
+          </li>
+          <li>
+            <a href="#about"
+              class="block py-2 px-3 text-gray-500 bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0">
+              About
+            </a>
+          </li>
+          <li class="mt-10 lg:mt-0 md:mt-0">
+            <a href="#contact" class="px-8 py-3 mt-4 md:mt-0 bg-neutral-900 text-dark font-bold rounded-full shadow-lg">
+              BOOK NOW
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="pt-36 pb-12 text-center">
+    <h1 class="text-5xl md:text-7xl font-bold text-neutral-900 mb-4">Full Gallery</h1>
+    <p class="text-neutral-600 text-lg max-w-xl mx-auto">
+      Explore our complete collection of nail artistry and design inspirations.
+    </p>
+  </header>
+
+  <section class="pb-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        <div class="aspect-square rounded-xl overflow-hidden shadow-md">
+          <img
+            src="https://images.unsplash.com/photo-1734524566551-5a0c4c104168?q=80&w=1760&auto=format&fit=crop"
+            class="w-full h-full object-cover" />
+        </div>
+
+        <div class="aspect-square rounded-xl overflow-hidden shadow-md">
+          <img
+            src="https://images.unsplash.com/photo-1587729927069-ef3b7a5ab9b4?q=80&w=1288&auto=format&fit=crop"
+            class="w-full h-full object-cover" />
+        </div>
+
+        <div class="aspect-square rounded-xl overflow-hidden shadow-md">
+          <img
+            src="https://images.unsplash.com/photo-1688583417770-ff6cc18071dc?w=900&auto=format&fit=crop&q=60"
+            class="w-full h-full object-cover" />
+        </div>
+
+        <div class="aspect-square rounded-xl overflow-hidden shadow-md">
+          <img
+            src="https://images.unsplash.com/photo-1559006045-d34d415b2cff?q=80&w=1335&auto=format&fit=crop"
+            class="w-full h-full object-cover" />
+        </div>
+
+        <div class="aspect-square rounded-xl overflow-hidden shadow-md">
+          <img
+            src="https://images.unsplash.com/photo-1601244668565-afba8cbd2b51?q=80&w=1287&auto=format&fit=crop"
+            class="w-full h-full object-cover" />
+        </div>
+
+        <div class="aspect-square rounded-xl overflow-hidden shadow-md">
+          <img
+            src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=900&auto=format&fit=crop&q=60"
+            class="w-full h-full object-cover" />
+        </div>
+
+        <div class="aspect-square rounded-xl overflow-hidden shadow-md">
+          <img
+            src="https://images.unsplash.com/photo-1612887390768-fb02affea7a6?q=80&w=1335&auto=format&fit=crop"
+            class="w-full h-full object-cover" />
+        </div>
+
+        <div class="aspect-square rounded-xl overflow-hidden shadow-md">
+          <img
+            src="https://images.unsplash.com/photo-1709839454771-704f7af2ce0c?q=80&w=1227&auto=format&fit=crop"
+            class="w-full h-full object-cover" />
+        </div>
+
+        <div class="aspect-square rounded-xl overflow-hidden shadow-md">
+          <img
+            src="https://images.unsplash.com/photo-1746607242420-12fc2604775d?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="w-full h-full object-cover" />
+        </div>
+
+        <div class="aspect-square rounded-xl overflow-hidden shadow-md">
+          <img
+            src="https://images.unsplash.com/photo-1604654894611-6973b376cbde?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI5fHx8ZW58MHx8fHx8"
+            class="w-full h-full object-cover" />
+        </div>
+      </div>
+
+      <div class="text-center mt-16">
+        <a href="index.html#gallery"
+          class="inline-block px-10 py-4 bg-neutral-900 text-neutral-50 font-bold text-lg rounded-full shadow-xl hover:scale-105 transition">
+          ← Back to Home
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="py-6 text-center text-neutral-700">
+    <p>Unofficial concept page created by YH as a free gift ❤️</p>
+  </footer>
+
+</body>
+
+</html>
