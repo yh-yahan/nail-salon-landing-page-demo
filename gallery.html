@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,55 +7,25 @@
   <link rel="icon" type="image/x-icon" href="./public/favicon.ico" />
   <title>Full Gallery — Nail Salon</title>
 </head>
-
 <body class="bg-neutral-100">
-
   <nav class="fixed w-full z-20 top-0 start-0 bg-neutral-100">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
         <span class="self-center text-xl text-heading font-semibold whitespace-nowrap">LOGO</span>
       </a>
-      <button id="burger-btn" data-collapse-toggle="navbar-default" type="button"
-        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
-        aria-controls="navbar">
+      <button id="burger-btn" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary">
         <span class="sr-only">Open main menu</span>
-        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-          viewBox="0 0 24 24">
+        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
           <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
         </svg>
       </button>
-      <div class="hidden w-full md:block md:w-auto text-white" id="navbar">
-        <ul
-          class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
-          <li>
-            <a href="#hero"
-              class="block py-2 px-3 text-gray-500 bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#services"
-              class="block py-2 px-3 text-gray-500 bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0">
-              Services
-            </a>
-          </li>
-          <li>
-            <a href="#gallery"
-              class="block py-2 px-3 text-gray-500 bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0">
-              Gallery
-            </a>
-          </li>
-          <li>
-            <a href="#about"
-              class="block py-2 px-3 text-gray-500 bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0">
-              About
-            </a>
-          </li>
-          <li class="mt-10 lg:mt-0 md:mt-0">
-            <a href="#contact" class="px-8 py-3 mt-4 md:mt-0 bg-neutral-900 text-dark font-bold rounded-full shadow-lg">
-              BOOK NOW
-            </a>
-          </li>
+      <div class="hidden w-full md:block md:w-auto" id="navbar">
+        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+          <li><a href="index.html#hero" class="block py-2 px-3 text-gray-700 hover:text-neutral-900">Home</a></li>
+          <li><a href="index.html#services" class="block py-2 px-3 text-gray-700 hover:text-neutral-900">Services</a></li>
+          <li><a href="index.html#gallery" class="block py-2 px-3 text-gray-700 hover:text-neutral-900">Gallery</a></li>
+          <li><a href="index.html#about" class="block py-2 px-3 text-gray-700 hover:text-neutral-900">About</a></li>
+          <li><a href="index.html#contact" class="px-8 py-3 bg-neutral-900 text-white font-bold rounded-full shadow-lg hover:bg-neutral-800">BOOK NOW</a></li>
         </ul>
       </div>
     </div>
@@ -72,81 +41,144 @@
   <section class="pb-24">
     <div class="max-w-7xl mx-auto px-6">
       <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
-        <div class="aspect-square rounded-xl overflow-hidden shadow-md">
-          <img
-            src="https://images.unsplash.com/photo-1734524566551-5a0c4c104168?q=80&w=1760&auto=format&fit=crop"
-            class="w-full h-full object-cover" />
+        <div class="aspect-square rounded-xl overflow-hidden shadow-md cursor-pointer hover:shadow-2xl transition" data-index="0">
+          <img src="https://images.unsplash.com/photo-1734524566551-5a0c4c104168?q=80&w=1760&auto=format&fit=crop" alt="Nail art" class="w-full h-full object-cover hover:scale-105 transition duration-300">
         </div>
-
-        <div class="aspect-square rounded-xl overflow-hidden shadow-md">
-          <img
-            src="https://images.unsplash.com/photo-1587729927069-ef3b7a5ab9b4?q=80&w=1288&auto=format&fit=crop"
-            class="w-full h-full object-cover" />
+        <div class="aspect-square rounded-xl overflow-hidden shadow-md cursor-pointer hover:shadow-2xl transition" data-index="1">
+          <img src="https://images.unsplash.com/photo-1587729927069-ef3b7a5ab9b4?q=80&w=1288&auto=format&fit=crop" alt="Nail art" class="w-full h-full object-cover hover:scale-105 transition duration-300">
         </div>
-
-        <div class="aspect-square rounded-xl overflow-hidden shadow-md">
-          <img
-            src="https://images.unsplash.com/photo-1688583417770-ff6cc18071dc?w=900&auto=format&fit=crop&q=60"
-            class="w-full h-full object-cover" />
+        <div class="aspect-square rounded-xl overflow-hidden shadow-md cursor-pointer hover:shadow-2xl transition" data-index="2">
+          <img src="https://images.unsplash.com/photo-1688583417770-ff6cc18071dc?w=900&auto=format&fit=crop&q=60" alt="Nail art" class="w-full h-full object-cover hover:scale-105 transition duration-300">
         </div>
-
-        <div class="aspect-square rounded-xl overflow-hidden shadow-md">
-          <img
-            src="https://images.unsplash.com/photo-1559006045-d34d415b2cff?q=80&w=1335&auto=format&fit=crop"
-            class="w-full h-full object-cover" />
+        <div class="aspect-square rounded-xl overflow-hidden shadow-md cursor-pointer hover:shadow-2xl transition" data-index="3">
+          <img src="https://images.unsplash.com/photo-1559006045-d34d415b2cff?q=80&w=1335&auto=format&fit=crop" alt="Nail art" class="w-full h-full object-cover hover:scale-105 transition duration-300">
         </div>
-
-        <div class="aspect-square rounded-xl overflow-hidden shadow-md">
-          <img
-            src="https://images.unsplash.com/photo-1601244668565-afba8cbd2b51?q=80&w=1287&auto=format&fit=crop"
-            class="w-full h-full object-cover" />
+        <div class="aspect-square rounded-xl overflow-hidden shadow-md cursor-pointer hover:shadow-2xl transition" data-index="4">
+          <img src="https://images.unsplash.com/photo-1601244668565-afba8cbd2b51?q=80&w=1287&auto=format&fit=crop" alt="Nail art" class="w-full h-full object-cover hover:scale-105 transition duration-300">
         </div>
-
-        <div class="aspect-square rounded-xl overflow-hidden shadow-md">
-          <img
-            src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=900&auto=format&fit=crop&q=60"
-            class="w-full h-full object-cover" />
+        <div class="aspect-square rounded-xl overflow-hidden shadow-md cursor-pointer hover:shadow-2xl transition" data-index="5">
+          <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=900&auto=format&fit=crop&q=60" alt="Nail art" class="w-full h-full object-cover hover:scale-105 transition duration-300">
         </div>
-
-        <div class="aspect-square rounded-xl overflow-hidden shadow-md">
-          <img
-            src="https://images.unsplash.com/photo-1612887390768-fb02affea7a6?q=80&w=1335&auto=format&fit=crop"
-            class="w-full h-full object-cover" />
+        <div class="aspect-square rounded-xl overflow-hidden shadow-md cursor-pointer hover:shadow-2xl transition" data-index="6">
+          <img src="https://images.unsplash.com/photo-1612887390768-fb02affea7a6?q=80&w=1335&auto=format&fit=crop" alt="Nail art" class="w-full h-full object-cover hover:scale-105 transition duration-300">
         </div>
-
-        <div class="aspect-square rounded-xl overflow-hidden shadow-md">
-          <img
-            src="https://images.unsplash.com/photo-1709839454771-704f7af2ce0c?q=80&w=1227&auto=format&fit=crop"
-            class="w-full h-full object-cover" />
+        <div class="aspect-square rounded-xl overflow-hidden shadow-md cursor-pointer hover:shadow-2xl transition" data-index="7">
+          <img src="https://images.unsplash.com/photo-1709839454771-704f7af2ce0c?q=80&w=1227&auto=format&fit=crop" alt="Nail art" class="w-full h-full object-cover hover:scale-105 transition duration-300">
         </div>
-
-        <div class="aspect-square rounded-xl overflow-hidden shadow-md">
-          <img
-            src="https://images.unsplash.com/photo-1746607242420-12fc2604775d?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            class="w-full h-full object-cover" />
+        <div class="aspect-square rounded-xl overflow-hidden shadow-md cursor-pointer hover:shadow-2xl transition" data-index="8">
+          <img src="https://images.unsplash.com/photo-1746607242420-12fc2604775d?q=80&w=1287&auto=format&fit=crop" alt="Nail art" class="w-full h-full object-cover hover:scale-105 transition duration-300">
         </div>
-
-        <div class="aspect-square rounded-xl overflow-hidden shadow-md">
-          <img
-            src="https://images.unsplash.com/photo-1604654894611-6973b376cbde?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI5fHx8ZW58MHx8fHx8"
-            class="w-full h-full object-cover" />
+        <div class="aspect-square rounded-xl overflow-hidden shadow-md cursor-pointer hover:shadow-2xl transition" data-index="9">
+          <img src="https://images.unsplash.com/photo-1604654894611-6973b376cbde?w=900&auto=format&fit=crop&q=60" alt="Nail art" class="w-full h-full object-cover hover:scale-105 transition duration-300">
         </div>
       </div>
 
       <div class="text-center mt-16">
-        <a href="index.html#gallery"
-          class="inline-block px-10 py-4 bg-neutral-900 text-neutral-50 font-bold text-lg rounded-full shadow-xl hover:scale-105 transition">
-          ← Back to Home
+        <a href="index.html#gallery" class="inline-block px-10 py-4 bg-neutral-900 text-neutral-50 font-bold text-lg rounded-full shadow-xl hover:scale-105 transition">
+          Back to Home
         </a>
       </div>
-
     </div>
   </section>
+
+  <div id="lightbox" class="fixed inset-0 bg-black/70 z-50 hidden flex items-center justify-center">
+    <div class="relative w-full h-full flex items-center justify-center">
+      <img id="lightbox-img" src="" alt="Enlarged nail art" class="max-w-full max-h-full object-contain pointer-events-none select-none">
+
+      <button id="lightbox-close" class="absolute top-6 right-6 text-white text-5xl font-light hover:text-neutral-300 transition z-10 bg-black/40 hover:bg-black/70 rounded-full w-14 h-14 flex items-center justify-center">
+        ×
+      </button>
+
+      <div class="absolute bottom-0 left-0 right-0 flex justify-center items-center gap-8 pb-8 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10">
+        <button id="lightbox-prev" class="text-white text-6xl md:text-7xl hover:text-neutral-300 transition transform hover:scale-110">
+          ‹
+        </button>
+        <div id="lightbox-counter" class="text-white text-lg md:text-xl font-light tracking-wider opacity-90">
+          1 / 10
+        </div>
+        <button id="lightbox-next" class="text-white text-6xl md:text-7xl hover:text-neutral-300 transition transform hover:scale-110">
+          ›
+        </button>
+      </div>
+    </div>
+  </div>
 
   <footer class="py-6 text-center text-neutral-700">
     <p>Unofficial concept page created by YH as a free gift ❤️</p>
   </footer>
 
-</body>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const burgerBtn = document.getElementById('burger-btn');
+      const navbar = document.getElementById('navbar');
+      burgerBtn?.addEventListener('click', () => navbar.classList.toggle('hidden'));
 
+      const galleryItems = document.querySelectorAll('[data-index]');
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const closeBtn = document.getElementById('lightbox-close');
+      const prevBtn = document.getElementById('lightbox-prev');
+      const nextBtn = document.getElementById('lightbox-next');
+      const counter = document.getElementById('lightbox-counter');
+      let currentIndex = 0;
+
+      function updateCounter() {
+        counter.textContent = `${currentIndex + 1} / ${galleryItems.length}`;
+      }
+
+      function openLightbox(index) {
+        currentIndex = index;
+        lightboxImg.src = galleryItems[index].querySelector('img').src;
+        lightbox.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+        updateCounter();
+      }
+
+      function closeLightbox() {
+        lightbox.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+
+      function showPrev() {
+        currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+        lightboxImg.src = galleryItems[currentIndex].querySelector('img').src;
+        updateCounter();
+      }
+
+      function showNext() {
+        currentIndex = (currentIndex + 1) % galleryItems.length;
+        lightboxImg.src = galleryItems[currentIndex].querySelector('img').src;
+        updateCounter();
+      }
+
+      galleryItems.forEach((item, i) => {
+        item.addEventListener('click', () => openLightbox(i));
+      });
+
+      closeBtn?.addEventListener('click', closeLightbox);
+      prevBtn?.addEventListener('click', showPrev);
+      nextBtn?.addEventListener('click', showNext);
+
+      document.addEventListener('keydown', (e) => {
+        if (lightbox.classList.contains('hidden')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') showPrev();
+        if (e.key === 'ArrowRight') showNext();
+      });
+
+      lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox || e.target === lightboxImg) closeLightbox();
+      });
+
+      ScrollReveal().reveal('.grid > div', {
+        delay: 100,
+        distance: '30px',
+        origin: 'bottom',
+        interval: 80,
+        easing: 'ease-out'
+      });
+    });
+  </script>
+</body>
 </html>
